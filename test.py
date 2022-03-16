@@ -13,7 +13,7 @@ class FlaskTest(unittest.TestCase):
         tester = app.test_client(self)
         response = tester.get('/')
         status = response.status_code
-        self.assertEqual(status,201)    
+        self.assertEqual(status,200)    
         
 if __name__ == "__main__":
     unittest.main()
