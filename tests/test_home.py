@@ -1,6 +1,12 @@
 import pytest
 from app import app
 
+def test_func_case_1():
+    assert True
+def test_func_case_2():
+    assert 1 == 1
+
+
 @pytest.fixture(autouse=True)
 def client():
     return app.test_client()
